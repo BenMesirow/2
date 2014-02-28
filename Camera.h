@@ -37,11 +37,12 @@ public:
     double GetFilmPlanDepth();
     double GetScreenWidthRatio();
 private:
-    Matrix Projection, ModelView;
     Point eyePoint;
     Vector look, up;
     double view;
     double width, height;
+    double near, far;
+    Vector u, v, w;
 };
 
 #endif
